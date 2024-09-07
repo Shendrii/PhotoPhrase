@@ -1,7 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { getPost } from "../_actions/postAction";
 
-export default function Home() {
+export default async function Home() {
+  const res = await getPost();
+  console.log(res);
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
