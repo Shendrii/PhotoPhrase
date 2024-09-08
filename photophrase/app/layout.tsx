@@ -3,6 +3,8 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
+import photophrase from "./assets/photophrase.jpg";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "PhotoPhrase",
@@ -20,8 +22,18 @@ export default function RootLayout({
     <>
       <html>
         <body>
-          <AppBar position="fixed" color="inherit" style={{ height: "8rem" }}>
-            <Toolbar style={{ justifyContent: "center", alignItems: "center" }}>
+          <AppBar
+            position="fixed"
+            color="inherit"
+            style={{
+              justifyContent: "end",
+              alignItems: "center",
+              height: "9rem",
+              margin: "0px",
+            }}
+          >
+            <Image src={photophrase} alt="" width={150} height={150} priority />
+            <Toolbar>
               {pages.map((page, index) => (
                 <Button key={index}>{page}</Button>
               ))}
