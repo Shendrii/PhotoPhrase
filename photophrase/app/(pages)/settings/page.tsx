@@ -1,9 +1,8 @@
-import Header from "@/app/components/Header";
+"use client";
 
 export default function Page() {
   return (
     <div>
-      <Header />
       <h1
         style={{ fontSize: "2rem", display: "flex", justifyContent: "center" }}
       >

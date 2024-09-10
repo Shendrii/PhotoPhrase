@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const navigation = [
   { page: "Home", path: "/" },
-  { page: "Account", path: "/pages/account" },
-  { page: "Captions", path: "/pages/captions" },
-  { page: "Settings", path: "/pages/settings" },
+  { page: "Account", path: "/account" },
+  { page: "Captions", path: "/captions" },
+  { page: "Settings", path: "/settings" },
 ];
 
 function Navigation() {

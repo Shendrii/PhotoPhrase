@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Header from "./components/Header";
 
 export const metadata: Metadata = {
   title: "PhotoPhrase",
@@ -14,6 +15,7 @@ export default function RootLayout({
     <>
       <html>
         <body>
+          <Header />
           <main> {children}</main>
 
           <footer></footer>
