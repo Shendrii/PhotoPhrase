@@ -2,26 +2,32 @@
   "name": "photophrase",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "ts-node backend/server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production ts-node backend/server.js",
     "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@mui/material": "^6.0.2",
+    "express": "^4.21.0",
+    "formidable": "^3.5.1",
     "next": "14.2.8",
+    "node-fetch": "^3.3.2",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/formidable": "^3.4.5",
     "@types/node": "^20",
     "@types/react": "18.3.5",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.8",
+    "ts-node": "^10.9.2",
     "typescript": "5.5.4"
   }
 }

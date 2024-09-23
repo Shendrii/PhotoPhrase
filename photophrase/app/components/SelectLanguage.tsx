@@ -32,11 +32,9 @@ const LanguageSelector = () => {
   };
 
   return (
-    <div style={{ marginTop: "50px" }}>
+    <div style={{ marginTop: "50px", marginBottom: "50px" }}>
       <FormControl fullWidth>
-        <InputLabel  id="language-select-label">
-          Select Language
-        </InputLabel>
+        <InputLabel id="language-select-label">Select Language</InputLabel>
         <Select
           label="Language"
           labelId="language-select-label"

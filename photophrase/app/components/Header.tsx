@@ -18,7 +18,12 @@ export default async function Header() {
           margin: "0px",
         }}
       >
-        <Image src={photophrase} alt="" width={150} height={150} priority />
+        <Image
+          src={photophrase}
+          alt=""
+          style={{ width: "150px", height: "auto" }}
+          priority
+        />
 
         <Toolbar>
           <Navigation />
