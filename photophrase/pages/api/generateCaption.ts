@@ -20,7 +20,7 @@ const query = async (filePath: string): Promise<CaptionResponse> => {
       "https://api-inference.huggingface.co/models/Salesforce/blip-image-captioning-base",
       {
         headers: {
-          Authorization: "Bearer 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",
+          Authorization: `Bearer ${process.env.NEXT_PUBLIC_HUGGING_FACE_TOKEN}`,
         },
         method: "POST",
         body: data,
